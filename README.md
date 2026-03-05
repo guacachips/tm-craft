@@ -1,4 +1,49 @@
-# README
+# TMCraft (Guaca Fork)
+
+This is a fork of [TMCraft](https://github.com/KiwiFlavoredApollo/tm-craft), a Cobblemon side mod that adds TMs with recipes. The intent of this fork is to implement daily rotating inventory for the Move Tutor villager with tier-based pricing and full move pool access.
+
+## Fork Feature: Daily Rotating Move Tutor with Full Pool
+
+### Pool
+
+All 929 tutor moves are available. No move is excluded from any villager level. Every day, any move can appear at any level.
+
+### Pricing
+
+Each move has a price based on its tier (determined by power, rarity, or some classification). The price is intrinsic to the move itself — it costs the same whether sold by a Novice or Master villager. A weak status move is cheap; Dragon Ascent is expensive. The villager level does not affect pricing.
+
+### Villager Level = Number of Slots
+
+The villager's profession level controls how many moves are on sale at once:
+
+| Level      | Moves on Sale |
+|------------|---------------|
+| Novice     | 1             |
+| Apprentice | 2             |
+| Journeyman | 3             |
+| Expert     | 4             |
+| Master     | 5             |
+
+### Daily Rotation
+
+Each in-game day, the villager's entire inventory is rerolled. New random moves are selected from the full 929 pool. The selection is independent — you could get 5 Master-tier moves at a Master villager by luck, or 5 cheap ones.
+
+### Quantity
+
+Each move on sale has exactly 1 stock. Once a player buys it, it's gone until the next day's rotation. No restocking during the same day.
+
+### Behavior Summary
+
+A Master-level Move Tutor villager wakes up each morning with 5 random moves for sale, each priced by the move's inherent tier, each with 1 copy available. Next morning, completely different selection.
+
+### Open Design Questions
+
+- **Tiering system**: How to classify the 929 moves into price tiers (base power thresholds, manual curation, or Cobblemon move metadata).
+- **Deterministic vs independent rotation**: Should all Move Tutor villagers in the world offer the same daily selection, or should each villager roll independently?
+
+---
+
+# Original TMCraft README
 
 TMCraft is a Cobblemon side mod that add TMs with recipes. Mods like EMI is highly recommended for viewing recipes. This mod is not a unique work of mine and heavily motivated by SimpleTMs made by Dragomordor. Most of the heavy lifting is done by Dragomordor. Here are few things different from SimpleTMs.
 

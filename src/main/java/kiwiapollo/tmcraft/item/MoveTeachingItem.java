@@ -53,6 +53,10 @@ public abstract class MoveTeachingItem extends Item implements ElementalTypeItem
         this.translation = translation;
     }
 
+    public String getMoveName() {
+        return this.move;
+    }
+
     @Environment(EnvType.CLIENT)
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
