@@ -9,7 +9,10 @@ import kiwiapollo.tmcraft.item.tutormove.TutorMoveTeachingItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.village.TradedItem;
 import net.minecraft.village.TradeOffer;
+
+import java.util.Optional;
 
 public class MoveTutorMoveHelper {
 
@@ -32,16 +35,16 @@ public class MoveTutorMoveHelper {
     public static TradeOffer createTradeOffer(Item item) {
         MoveTutorTier tier = getTier(item);
 
-        ItemStack emeralds = new ItemStack(Items.EMERALD, tier.getEmeraldCount());
+        TradedItem emeralds = new TradedItem(Items.EMERALD, tier.getEmeraldCount());
 
         ElementalType type = ((TutorMoveTeachingItem) item).getMoveType();
-        ItemStack typeGems = new ItemStack(new TypeGemMap().get(type), tier.getTypeGemCount());
+        TradedItem typeGems = new TradedItem(new TypeGemMap().get(type), tier.getTypeGemCount());
 
         ItemStack result = new ItemStack(item);
 
         return new TradeOffer(
                 emeralds,
-                typeGems,
+                Optional.of(typeGems),
                 result,
                 0,
                 1,     // maxUses: stock depletes, no restock until next day

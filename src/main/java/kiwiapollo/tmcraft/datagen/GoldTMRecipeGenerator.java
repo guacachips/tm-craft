@@ -7,17 +7,16 @@ import kiwiapollo.tmcraft.item.misc.BlankDiscItem;
 import kiwiapollo.tmcraft.item.tmmove.TMMoveTeachingItem;
 import kiwiapollo.tmcraft.item.tmmove.TMMoveItem;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.ItemTags;
 
-import java.util.function.Consumer;
 
 public class GoldTMRecipeGenerator {
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
         GoldTMRecipeJsonBuilder.create((TMMoveTeachingItem) TMMoveItem.TM_CRUNCH)
                 .input(CobblemonItems.DEEP_SEA_TOOTH)
                 .offerTo(exporter);
@@ -410,7 +409,7 @@ public class GoldTMRecipeGenerator {
                 .offerTo(exporter);
 
         GoldTMRecipeJsonBuilder.create((TMMoveTeachingItem) TMMoveItem.TM_DIVE)
-                .input(Items.SCUTE)
+                .input(Items.TURTLE_SCUTE)
                 .offerTo(exporter);
 
         GoldTMRecipeJsonBuilder.create((TMMoveTeachingItem) TMMoveItem.TM_REVENGE)
@@ -448,7 +447,7 @@ public class GoldTMRecipeGenerator {
                 .offerTo(exporter);
 
         GoldTMRecipeJsonBuilder.create((TMMoveTeachingItem) TMMoveItem.TM_ROUND)
-                .input(ItemTags.MUSIC_DISCS)
+                .input(ItemTags.CREEPER_DROP_MUSIC_DISCS)
                 .offerTo(exporter);
 
         GoldTMRecipeJsonBuilder.create((TMMoveTeachingItem) TMMoveItem.TM_SHOCKWAVE)

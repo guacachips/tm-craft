@@ -16,8 +16,7 @@ import kiwiapollo.tmcraft.common.TextColorMap;
 import kiwiapollo.tmcraft.gamerule.ModGameRule;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.client.item.TooltipContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -46,7 +45,7 @@ public abstract class MoveTeachingItem extends Item implements ElementalTypeItem
     private final String translation;
 
     public MoveTeachingItem(String move, ElementalType type, String translation) {
-        super(new FabricItemSettings());
+        super(new Item.Settings());
 
         this.move = move;
         this.type = type;
@@ -59,7 +58,7 @@ public abstract class MoveTeachingItem extends Item implements ElementalTypeItem
 
     @Environment(EnvType.CLIENT)
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+    public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
         if (getMoveTemplate().getDamageCategory() == DamageCategories.INSTANCE.getSTATUS()) {
             tooltip.add(getMoveTypeTooltipText());
             tooltip.add(getMoveDamageCategoryTooltipText());
@@ -118,13 +117,13 @@ public abstract class MoveTeachingItem extends Item implements ElementalTypeItem
             return Text.translatable("item.tmcraft.move_learn_status.empty").formatted(Formatting.GRAY);
 
         } else if (isPokemonAlreadyLearnedMove(pokemon)) {
-            return pokemon.getDisplayName().append(Text.literal(", ")).append(Text.translatable("item.tmcraft.move_learn_status.learned").formatted(Formatting.YELLOW));
+            return pokemon.getDisplayName(false).append(Text.literal(", ")).append(Text.translatable("item.tmcraft.move_learn_status.learned").formatted(Formatting.YELLOW));
 
         } else if (isPokemonAbleToLearnMove(pokemon)) {
-            return pokemon.getDisplayName().append(Text.literal(", ")).append(Text.translatable("item.tmcraft.move_learn_status.able").formatted(Formatting.GREEN));
+            return pokemon.getDisplayName(false).append(Text.literal(", ")).append(Text.translatable("item.tmcraft.move_learn_status.able").formatted(Formatting.GREEN));
 
         } else {
-            return pokemon.getDisplayName().append(Text.literal(", ")).append(Text.translatable("item.tmcraft.move_learn_status.unable").formatted(Formatting.RED));
+            return pokemon.getDisplayName(false).append(Text.literal(", ")).append(Text.translatable("item.tmcraft.move_learn_status.unable").formatted(Formatting.RED));
         }
     }
 
@@ -155,13 +154,13 @@ public abstract class MoveTeachingItem extends Item implements ElementalTypeItem
         }
 
         if (isPokemonAlreadyLearnedMove(pokemon)) {
-            player.sendMessage(Text.translatable("item.tmcraft.error.already_learned_move", pokemon.getDisplayName(), getMoveTemplate().getDisplayName()).formatted(Formatting.RED));
+            player.sendMessage(Text.translatable("item.tmcraft.error.already_learned_move", pokemon.getDisplayName(false), getMoveTemplate().getDisplayName()).formatted(Formatting.RED));
             player.getWorld().playSound(null, player.getBlockPos(), SoundEvents.ITEM_SHIELD_BLOCK, SoundCategory.PLAYERS, 1.0f, 1.0f);
             return ActionResult.PASS;
         }
 
         if (!isPokemonAbleToLearnMove(pokemon)) {
-            player.sendMessage(Text.translatable("item.tmcraft.error.cannot_learn_move", pokemon.getDisplayName(), getMoveTemplate().getDisplayName()).formatted(Formatting.RED));
+            player.sendMessage(Text.translatable("item.tmcraft.error.cannot_learn_move", pokemon.getDisplayName(false), getMoveTemplate().getDisplayName()).formatted(Formatting.RED));
             player.getWorld().playSound(null, player.getBlockPos(), SoundEvents.ITEM_SHIELD_BLOCK, SoundCategory.PLAYERS, 1.0f, 1.0f);
             return ActionResult.PASS;
         }
@@ -172,7 +171,7 @@ public abstract class MoveTeachingItem extends Item implements ElementalTypeItem
             itemStack.decrement(1);
         }
 
-        player.sendMessage(Text.translatable("item.tmcraft.success.pokemon_learned_move", pokemon.getDisplayName(), getMoveTemplate().getDisplayName()));
+        player.sendMessage(Text.translatable("item.tmcraft.success.pokemon_learned_move", pokemon.getDisplayName(false), getMoveTemplate().getDisplayName()));
         player.getWorld().playSound(null, player.getBlockPos(), CobblemonSounds.PC_CLICK, SoundCategory.PLAYERS, 1.0f, 1.0f);
 
         return ActionResult.SUCCESS;

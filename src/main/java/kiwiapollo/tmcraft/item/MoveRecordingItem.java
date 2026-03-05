@@ -69,22 +69,22 @@ public abstract class MoveRecordingItem extends Item implements PokemonAndMoveSe
     }
 
     @Override
-    public boolean canUseOnPokemon(@NotNull Pokemon pokemon) {
+    public boolean canUseOnPokemon(@NotNull ItemStack itemStack, @NotNull Pokemon pokemon) {
         return true;
     }
 
     @Override
-    public boolean canUseOnBattlePokemon(@NotNull BattlePokemon battlePokemon) {
+    public boolean canUseOnBattlePokemon(@NotNull ItemStack itemStack, @NotNull BattlePokemon battlePokemon) {
         return false;
     }
 
     @Override
-    public boolean canUseOnMove(@NotNull Pokemon pokemon, @NotNull Move move) {
+    public boolean canUseOnMove(@NotNull ItemStack itemStack, @NotNull Pokemon pokemon, @NotNull Move move) {
         return true;
     }
 
     @Override
-    public boolean canUseOnMove(@NotNull Move move) {
+    public boolean canUseOnMove(@NotNull ItemStack itemStack, @NotNull Move move) {
         return true;
     }
 

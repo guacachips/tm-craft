@@ -8,8 +8,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.village.TradedItem;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradeOfferList;
+
+import java.util.Optional;
 
 import java.util.Collections;
 import java.util.List;
@@ -54,7 +57,7 @@ public class MoveTutorRotation {
 
         if (level >= 3) {
             offers.add(new TradeOffer(
-                    new ItemStack(Items.EMERALD, 22),
+                    new TradedItem(Items.EMERALD, 22),
                     ModSmithingTemplateItem.MOVE_UPGRADE_SMITHING_TEMPLATE.getDefaultStack(),
                     10, 2, 0.05F
             ));
