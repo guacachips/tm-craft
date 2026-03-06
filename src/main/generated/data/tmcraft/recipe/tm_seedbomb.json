@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:gold_blank_disc"
+    },
+    {
+      "item": "cobblemon:grass_gem"
+    },
+    {
+      "tag": "cobblemon:seeds"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_seedbomb"
+  }
+}

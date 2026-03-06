@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:gold_blank_disc"
+    },
+    {
+      "item": "cobblemon:fairy_gem"
+    },
+    {
+      "item": "cobblemon:love_sweet"
+    },
+    {
+      "item": "minecraft:goat_horn"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_alluringvoice"
+  }
+}

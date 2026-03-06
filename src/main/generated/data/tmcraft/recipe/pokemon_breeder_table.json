@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_stained_glass"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "G": {
+      "item": "minecraft:red_concrete"
+    }
+  },
+  "pattern": [
+    "EE",
+    "BB",
+    "GG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:pokemon_breeder_table"
+  }
+}

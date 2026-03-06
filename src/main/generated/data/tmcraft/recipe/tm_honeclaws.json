@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:emerald_blank_disc"
+    },
+    {
+      "item": "cobblemon:dark_gem"
+    },
+    {
+      "item": "cobblemon:razor_claw"
+    },
+    {
+      "item": "minecraft:grindstone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_honeclaws"
+  }
+}

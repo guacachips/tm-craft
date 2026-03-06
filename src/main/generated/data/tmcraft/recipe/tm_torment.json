@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:emerald_blank_disc"
+    },
+    {
+      "item": "cobblemon:dark_gem"
+    },
+    {
+      "tag": "cobblemon:mints"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_torment"
+  }
+}

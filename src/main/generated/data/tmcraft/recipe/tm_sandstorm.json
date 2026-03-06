@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:emerald_blank_disc"
+    },
+    {
+      "item": "cobblemon:rock_gem"
+    },
+    {
+      "item": "cobblemon:soft_sand"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_sandstorm"
+  }
+}

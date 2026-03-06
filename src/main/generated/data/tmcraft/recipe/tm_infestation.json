@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:copper_blank_disc"
+    },
+    {
+      "item": "cobblemon:bug_gem"
+    },
+    {
+      "item": "minecraft:cobweb"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_infestation"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:gold_blank_disc"
+    },
+    {
+      "item": "cobblemon:dark_gem"
+    },
+    {
+      "item": "cobblemon:deep_sea_tooth"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_crunch"
+  }
+}

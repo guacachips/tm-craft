@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:emerald_blank_disc"
+    },
+    {
+      "item": "cobblemon:psychic_gem"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_psychicterrain"
+  }
+}

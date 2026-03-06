@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "D": {
+      "item": "minecraft:cobbled_deepslate"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "GBG",
+    "GDG",
+    "GGG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:move_upgrade_smithing_template"
+  }
+}

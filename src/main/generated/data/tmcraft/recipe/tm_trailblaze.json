@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:iron_blank_disc"
+    },
+    {
+      "item": "cobblemon:grass_gem"
+    },
+    {
+      "item": "cobblemon:x_speed"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_trailblaze"
+  }
+}

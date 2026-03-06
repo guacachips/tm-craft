@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:diamond_blank_disc"
+    },
+    {
+      "item": "cobblemon:poison_gem"
+    },
+    {
+      "item": "minecraft:tnt"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_sludgebomb"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:iron_blank_disc"
+    },
+    {
+      "item": "cobblemon:normal_gem"
+    },
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_snore"
+  }
+}

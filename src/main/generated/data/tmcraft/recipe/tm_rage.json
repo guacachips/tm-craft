@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:copper_blank_disc"
+    },
+    {
+      "item": "cobblemon:normal_gem"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:iron_sword"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_rage"
+  }
+}

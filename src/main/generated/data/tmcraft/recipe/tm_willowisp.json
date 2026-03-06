@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:emerald_blank_disc"
+    },
+    {
+      "item": "cobblemon:fire_gem"
+    },
+    {
+      "item": "minecraft:soul_lantern"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_willowisp"
+  }
+}

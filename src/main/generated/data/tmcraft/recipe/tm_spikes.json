@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:emerald_blank_disc"
+    },
+    {
+      "item": "cobblemon:ground_gem"
+    },
+    {
+      "item": "minecraft:pointed_dripstone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_spikes"
+  }
+}

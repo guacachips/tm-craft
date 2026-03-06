@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:iron_blank_disc"
+    },
+    {
+      "item": "cobblemon:electric_gem"
+    },
+    {
+      "item": "minecraft:end_rod"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_chargebeam"
+  }
+}

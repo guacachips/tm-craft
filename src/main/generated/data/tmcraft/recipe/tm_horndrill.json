@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:netherite_blank_disc"
+    },
+    {
+      "item": "cobblemon:normal_gem"
+    },
+    {
+      "item": "minecraft:netherite_pickaxe"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_horndrill"
+  }
+}

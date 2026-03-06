@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_stained_glass"
+    },
+    "G": {
+      "item": "minecraft:green_concrete"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "II",
+    "BB",
+    "GG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:move_tutor_table"
+  }
+}

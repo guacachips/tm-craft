@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:gold_blank_disc"
+    },
+    {
+      "item": "cobblemon:fairy_gem"
+    },
+    {
+      "item": "minecraft:end_rod"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_dazzlinggleam"
+  }
+}

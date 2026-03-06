@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond_blank_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tmcraft:diamond_blank_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tmcraft:tm_fireblast"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_diamond_blank_disc"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tmcraft:tm_fireblast"
+    ]
+  }
+}

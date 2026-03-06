@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:diamond_blank_disc"
+    },
+    {
+      "item": "cobblemon:ghost_gem"
+    },
+    {
+      "item": "minecraft:piston"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_phantomforce"
+  }
+}

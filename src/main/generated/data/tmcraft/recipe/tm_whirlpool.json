@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:iron_blank_disc"
+    },
+    {
+      "item": "cobblemon:water_gem"
+    },
+    {
+      "item": "minecraft:nautilus_shell"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_whirlpool"
+  }
+}

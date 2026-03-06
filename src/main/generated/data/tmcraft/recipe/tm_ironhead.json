@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:gold_blank_disc"
+    },
+    {
+      "item": "cobblemon:steel_gem"
+    },
+    {
+      "item": "minecraft:iron_helmet"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_ironhead"
+  }
+}

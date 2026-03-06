@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:gold_blank_disc"
+    },
+    {
+      "item": "cobblemon:bug_gem"
+    },
+    {
+      "item": "cobblemon:eject_button"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_uturn"
+  }
+}

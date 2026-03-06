@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:emerald_blank_disc"
+    },
+    {
+      "item": "cobblemon:normal_gem"
+    },
+    {
+      "item": "minecraft:armor_stand"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_substitute"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:emerald_blank_disc"
+    },
+    {
+      "item": "cobblemon:dragon_gem"
+    },
+    {
+      "item": "minecraft:jukebox"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_dragondance"
+  }
+}

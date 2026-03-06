@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tmcraft:netherite_blank_disc"
+    },
+    {
+      "item": "cobblemon:fighting_gem"
+    },
+    {
+      "item": "cobblemon:power_bracer"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tmcraft:tm_superpower"
+  }
+}

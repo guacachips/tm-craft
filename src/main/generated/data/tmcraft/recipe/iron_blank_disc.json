@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "tmcraft:copper_blank_disc"
+  },
+  "result": {
+    "count": 1,
+    "id": "tmcraft:iron_blank_disc"
+  },
+  "template": {
+    "item": "tmcraft:move_upgrade_smithing_template"
+  }
+}
