@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "tmcraft:movetutor_poi",
+      "required": false
+    },
+    {
+      "id": "tmcraft:pokemonbreeder_poi",
+      "required": false
+    }
+  ]
+}
