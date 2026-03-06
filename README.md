@@ -2,6 +2,8 @@
 
 This is a fork of [TMCraft](https://github.com/KiwiFlavoredApollo/tm-craft), a Cobblemon side mod that adds TMs with recipes. The intent of this fork is to implement daily rotating inventory for the Move Tutor villager with tier-based pricing and full move pool access.
 
+For build, versioning, and release instructions, see [DEVELOPERS.md](DEVELOPERS.md).
+
 ## Fork Feature: Daily Rotating Move Tutor with Full Pool
 
 ### Pool
